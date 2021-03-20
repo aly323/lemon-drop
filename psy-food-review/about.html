@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- TO DO: styling on this entire page lol what do i want ?? -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <link rel="stylesheet" href="styling.css">
+    <!-- allow for jQuery functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            
+            // hiding all answers when page loads
+            for(var i = 1; i < 7; i++) {
+                var pre = "#a";
+                var num = i.toString();
+                var answerNum = pre.concat(num);
+                $(answerNum).hide()
+            }
+            
+            // toggle between showing and not showing answer
+            $("#q1").click(function(){
+                $("#a1").toggle("fast");
+            });
+            
+            $("#q2").click(function(){
+                $("#a2").toggle("fast");
+            });
+            
+            $("#q3").click(function(){
+                $("#a3").toggle("fast");
+            });
+            
+            $("#q4").click(function(){
+                $("#a4").toggle("fast");
+            });
+            
+            $("#q5").click(function(){
+                $("#a5").toggle("fast");
+            });
+            
+            $("#q6").click(function(){
+                $("#a6").toggle("fast");
+            });
+            
+        });
+</script>
+    
+    <title>About</title>
+</head>
+<body>
+        <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="submit.html">Submit</a></li>
+        <li class="active" style="float:right"><a href="about.html">About</a></li>
+    </ul>
+    <div class="styleddesc">Info on Jeremy and other fun stuff</div>
+
+
+      <img src="https://as.tufts.edu/psychology/sites/g/files/lrezom206/files/styles/embedded_small/public/2020-09/people-jeremy-pagan.jpg?itok=5DO3ylyA" style="height:100%; border-radius: 25px; margin:35px;">
+    <div style="float:right; padding-right:50px;">
+        <br>
+        <div style="background-color:#85C1E9; padding:20px;">
+        <div class="opaque" style="padding: 20px;">
+        <br>
+        This website marks the food journey of Jeremy Pagan, as each Tuesday 1:30-1:40,<br>he tries a new type of food during Lab section D of Experimental Psychology. <br>It all started with a passing comment on sweet potatoes,<br> to a promise to eat some by next week. <br>And so, the Food Review was born.
+    
+    <br>
+    <br>
+            Check back for any weekly updates!
+    <br>
+    <br>
+        </div>
+            </div>
+    <br>
+    </div>
+    
+ <h2 style="text-align: center">Click on fun facts below:</h2>
+ <div class="funfacts">
+    <div class="fun" id="q1" style="background-color:#90ee90;">Best condiment</div>
+    <div class="fact" id="a1">I love ranch!!! I eat it with pizza, fries, sandwiches, in addition to with wings.</div>
+        
+    <div class="fun" id="q2" style="background-color:#85C1E9;">Worst condiment</div>
+    <div class="fact" id="a2">On the other hand, my arch nemesis is ketchup lol absolutely dislike ketchup and tried twice when I was a kid lol. I’d rather eat a bug than dip my fries in ketchup.</div>
+        
+    <div class="fun" id="q3" style="background-color:#CACFD2;">Pizza</div>    
+    <div class="fact" id="a3">I love pizza, but never eat the crust.</div>
+    
+    <div class="fun" id="q4" style="background-color:#90ee90;">Allergy</div>  
+    <div class="fact" id="a4">Allergic to shellfish, although I still eat small amounts of shrimp because...shrimp is delicious lol</div>
+    
+    <div class="fun" id="q5" style="background-color:#85C1E9;">Best sandwich</div>  
+    <div class="fact" id="a5">I love peanut butter sandwiches (literally, I eat one every day). Interestingly, the first time I’ve tried jelly was 2 years ago and I haven’t had it since.</div>
+    
+    <div class="fun" id="q6" style="background-color:#CACFD2;">Favorite meal</div>  
+    <div class="fact" id="a6">My favorite meal is a jibarito sandwich, which is a Chicago Puerto Rican dish. It’s a steak sandwich but instead of bread it’s fried plantain.</div>
+        
+</div>
+
+<!--     
+    
+    <div>Funny story: There’s a funny story where I went to a psychology conference in Atlanta 3 years ago. While at dinner with Dr. Sam Sommers and other Tufts/NYU/MIT faculty and graduate students I told the server to bring me the hottest hot sauce for my tacos...I specifically told her I could handle it because I’m Mexican. And we’ll that completely backfired and I started tearing up in front of everyone lol Prof. Sommers still brings it up to his intro to social psychology students every once in a while. That said, personally I love spicy food and if I’m not tearing up then I’m not enjoying it lol I love the sense of my mouth burning for some reason. It’s the same reason why I go on rollercoasters even though I’m scared of heights, I like the adrenaline.</div>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+ 
+-->
+</body>
+</html>
