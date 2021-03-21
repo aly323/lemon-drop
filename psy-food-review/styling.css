@@ -1,0 +1,217 @@
+/* Overall styling of website */
+body {
+    line-height: 1.6;
+    font-family: Georgia;
+    font-size: 20px;
+    background-color: #EBF5FB;
+}
+
+/* Navbar  */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #CACFD2; /* light gray*/
+  font-size: 22px;
+}
+/* Navbar  */
+li {
+  float: left;
+}
+/* Navbar  */
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Navbar  */
+li a:hover:not(.active) {
+  background-color: #85C1E9; /*light blue*/
+}
+/* Navbar  */
+.active {
+  background-color: #48C9B0; /* green */
+}
+
+.styleddesc {
+    padding: 20px; 
+    text-align:center; 
+    font-style:italic;
+}
+
+
+/* to replace homeImgBackground */
+.parallax1 {
+  /* The image used */
+  background-image: url("https://aeworld.com/wp-content/uploads/2020/05/heart-healthy-food-1580231690.jpg");
+  min-height: 280px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ text-align:center; 
+ padding-top:180px; 
+ padding-bottom: 50px;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("https://media.istockphoto.com/photos/wooden-tabletop-over-defocused-kitchen-background-picture-id1071414426?k=6&m=1071414426&s=170667a&w=0&h=K_fElhL2Nu4FRXvMJ4_px29CVOvIgL9Ra8VS8dF_tsM=");
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.submitImgBackground {
+  background-image: url("http://social101.com/wp-content/uploads/sites/4/2019/11/ffmkOrXc.jpeg-750x400.jpg");
+  background-size: cover;
+}
+
+/* flexbox review page */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color:#EBF5FB;
+/*   background-image: url("https://image.freepik.com/free-photo/wood-table-top-blurred-kitchen-interior-background-with-vintage-filter-can-used-display-montage-your-products_7191-28.jpg");
+  background-size:cover; */
+}
+/* flexbox review page */
+.flex-item {
+  width: 250px;
+  height: 290px;
+  margin-top: 10px;
+}
+/* flexbox review page */
+.gall {
+    width: 238px;
+    height: 238px;
+    padding: 5px;
+}
+/* flexbox review page */
+.desc {
+  color: black;
+  fonsize: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* flip card for gallery*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  padding-bottom: 40px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 105%;
+  height: 107%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #90ee90;; /* light green*/
+  color: black;
+}
+.flip-card-back {
+  background-color: #85C1E9; /* light blue */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* about page funfacts */
+.funfacts {
+    text-align: center;
+    line-height: 1.6;
+    font-family: Georgia;
+    font-size: 20px;
+}
+/* about page funfacts */
+.fun {
+    text-align: center;
+    line-height: 1.6;
+    font-family: Georgia;
+    font-size: 25px;
+    padding: 7px;
+}
+.fun:hover {
+    color:white;
+}
+/* about page funfacts */
+.fact {
+    padding: 20px;
+}
+
+.opaque {
+    
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+/*form styling*/
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Georgia;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #48C9B0;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Georgia;
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #85C1E9;
+}
+
+/*footer info*/
+footer {
+    background-color: #CACFD2; /* light gray*/    
+    text-align:center;
+    font-size: 16px;
+    color: black;
+    padding: 20px;
+    line-height: 1.6;
+}
